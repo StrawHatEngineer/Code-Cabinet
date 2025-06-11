@@ -1,0 +1,37 @@
+{
+    "has_more": false,
+    "batch_id": null,
+    "files": [
+        {
+            "original_file_name": "ilovepdf_merged.pdf",
+            "input_file_path": "ib-internal/vinay.thapa_instabase.com/fs/Instabase Drive/app-runs/3dc28f8b-7d60-46b5-803d-ecc4a6b6c2fb/1748455030769/input/ilovepdf_merged.pdf",
+            "documents": [
+                {
+                    "class_name": "Aadhar",
+                    "page_numbers": [
+                        1,
+                        2
+                    ],
+                    "fields": [],
+                    "post_processed_paths": [
+                        "ib-internal/vinay.thapa_instabase.com/fs/Instabase Drive/app-runs/3dc28f8b-7d60-46b5-803d-ecc4a6b6c2fb/1748455030769/output/s1_process_files/images/ilovepdf_merged.pdf_p0.JPEG.JPEG",
+                        "ib-internal/vinay.thapa_instabase.com/fs/Instabase Drive/app-runs/3dc28f8b-7d60-46b5-803d-ecc4a6b6c2fb/1748455030769/output/s1_process_files/images/ilovepdf_merged.pdf_p1.JPEG.JPEG"
+                    ],
+                    "post_processed_pdf_path": null
+                },
+                {
+                    "class_name": "Payslip",
+                    "page_numbers": [
+                        3
+                    ],
+                    "fields": [],
+                    "post_processed_paths": [
+                        "ib-internal/vinay.thapa_instabase.com/fs/Instabase Drive/app-runs/3dc28f8b-7d60-46b5-803d-ecc4a6b6c2fb/1748455030769/output/s1_process_files/images/ilovepdf_merged.pdf_p2.JPEG.jpeg"
+                    ],
+                    "post_processed_pdf_path": null
+                }
+            ],
+            "post_processed_pdf_path": null
+        }
+    ]
+}

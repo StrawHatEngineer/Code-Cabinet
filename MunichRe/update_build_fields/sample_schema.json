@@ -1,0 +1,490 @@
+{
+    "classes": {
+        "93": {
+            "name": "Email",
+            "description": "",
+            "fields": {
+                "283": {
+                    "name": "Broker Entity Name",
+                    "description": "The name of the broker entity or broker company responsible for placing the insurance submission. Look in the signature or sender's block.",
+                    "prompt": "Broker Entity Name",
+                    "position": 1,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "ADVANCED",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "284": {
+                    "name": "Broker City",
+                    "description": "The city where the broker's office is located. Don't return from the insured details.\nOnly return the city name without any additional details.",
+                    "prompt": "Broker City",
+                    "position": 2,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "ADVANCED",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "285": {
+                    "name": "Broker State",
+                    "description": "The city where the broker's office is located. Don't return from the insured details.\nOnly return the city name without any additional details.",
+                    "prompt": "Broker State",
+                    "position": 3,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "ADVANCED",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "288": {
+                    "name": "Broker Address Line 1",
+                    "description": "The first line of the broker's address excluding suite number or unit number.",
+                    "prompt": "Broker Address Line 1",
+                    "position": 4,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "ADVANCED",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "289": {
+                    "name": "Broker Address Line 2",
+                    "description": "The second line of the broker's address typically including suite number or unit number.",
+                    "prompt": "Broker Address Line 2",
+                    "position": 5,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "ADVANCED",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "290": {
+                    "name": "Broker Zip Code",
+                    "description": "Broker Zip Code",
+                    "prompt": "Broker Zip Code",
+                    "position": 6,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "291": {
+                    "name": "Insured Name",
+                    "description": "Insured Name",
+                    "prompt": "Insured Name",
+                    "position": 7,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "292": {
+                    "name": "Insured City",
+                    "description": "Insured City",
+                    "prompt": "Insured City",
+                    "position": 8,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "ADVANCED",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "293": {
+                    "name": "Insured State",
+                    "description": "Insured State",
+                    "prompt": "Insured State",
+                    "position": 9,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "ADVANCED",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "294": {
+                    "name": "Insured Address Line 1",
+                    "description": "Insured Address Line 1",
+                    "prompt": "Insured Address Line 1",
+                    "position": 10,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "295": {
+                    "name": "Insured Address Line 2",
+                    "description": "Insured Address Line 2",
+                    "prompt": "Insured Address Line 2",
+                    "position": 11,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "296": {
+                    "name": "Insured Zip Code",
+                    "description": "Insured Zip Code",
+                    "prompt": "Insured Zip Code",
+                    "position": 12,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "297": {
+                    "name": "Insured Entity Type",
+                    "description": "Insured Entity Type (e.g. Corporation, LLC, etc)",
+                    "prompt": "Insured Entity Type",
+                    "position": 13,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "406": {
+                    "name": "Insured FEIN",
+                    "description": "Insured FEIN",
+                    "prompt": "Insured FEIN",
+                    "position": 14,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "407": {
+                    "name": "Subline of Business or Product",
+                    "description": "Subline of Business or Product, return either MPL or LPL.",
+                    "prompt": "Subline of Business or Product",
+                    "position": 15,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "408": {
+                    "name": "Submission Effective Date",
+                    "description": "Submission Effective Date",
+                    "prompt": "Submission Effective Date",
+                    "position": 16,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "409": {
+                    "name": "Submission Expiration Date",
+                    "description": "Submission Expiration Date",
+                    "prompt": "Submission Expiration Date",
+                    "position": 17,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "410": {
+                    "name": "Insurance Type",
+                    "description": "Identify the type of insurance coverage (either Insurance, Reinsurance or Retrocession)",
+                    "prompt": "Insurance Type",
+                    "position": 18,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "411": {
+                    "name": "Underwriter Email",
+                    "description": "Extract the email address of the underwriter assigned to this submission, it will be from MunichRe.",
+                    "prompt": "Underwriter Email",
+                    "position": 19,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "412": {
+                    "name": "Submission Received Date",
+                    "description": "Extract the date and time (in the format MM/DD/YYYY hh:mm AM/PM) when the underwriter forwarded this email to the shared inbox.\nLook for the earliest sent date and earliest time.",
+                    "prompt": "Submission Received Date",
+                    "position": 20,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "413": {
+                    "name": "Timezone",
+                    "description": "Extract the timezone of the submission received date like EST, PST, UTC, etc. Return only the timezone.",
+                    "prompt": "Timezone",
+                    "position": 21,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                "414": {
+                    "name": "Additional Insured",
+                    "description": "Name of the named additional insured",
+                    "prompt": "Additional Insured",
+                    "position": 0,
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                }
+            }
+        },
+        "94": {
+            "name": "Other",
+            "description": "",
+            "fields": {}
+        },
+        "95": {
+            "name": "Supplementary App Form",
+            "description": "",
+            "new_fields": [
+                {
+                    "name": "Broker Entity Name",
+                    "description": "The name of the broker entity or broker company responsible for placing the insurance submission. Look in the signature or sender's block.",
+                    "prompt": "Broker Entity Name",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "ADVANCED",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Broker City",
+                    "description": "The city where the broker's office is located. Don't return from the insured details.\nOnly return the city name without any additional details.",
+                    "prompt": "Broker City",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "ADVANCED",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Broker State",
+                    "description": "The city where the broker's office is located. Don't return from the insured details.\nOnly return the city name without any additional details.",
+                    "prompt": "Broker State",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "ADVANCED",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Broker Address Line 1",
+                    "description": "The first line of the broker's address excluding suite number or unit number.",
+                    "prompt": "Broker Address Line 1",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "ADVANCED",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Broker Address Line 2",
+                    "description": "The second line of the broker's address typically including suite number or unit number.",
+                    "prompt": "Broker Address Line 2",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "ADVANCED",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Broker Zip Code",
+                    "description": "Broker Zip Code",
+                    "prompt": "Broker Zip Code",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Insured Name",
+                    "description": "Insured Name",
+                    "prompt": "Insured Name",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Insured City",
+                    "description": "Insured City",
+                    "prompt": "Insured City",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "ADVANCED",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Insured State",
+                    "description": "Insured State",
+                    "prompt": "Insured State",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "ADVANCED",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Insured Address Line 1",
+                    "description": "Insured Address Line 1",
+                    "prompt": "Insured Address Line 1",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Insured Address Line 2",
+                    "description": "Insured Address Line 2",
+                    "prompt": "Insured Address Line 2",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Insured Zip Code",
+                    "description": "Insured Zip Code",
+                    "prompt": "Insured Zip Code",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Insured Entity Type",
+                    "description": "Insured Entity Type (e.g. Corporation, LLC, etc)",
+                    "prompt": "Insured Entity Type",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Insured FEIN",
+                    "description": "Insured FEIN",
+                    "prompt": "Insured FEIN",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Subline of Business or Product",
+                    "description": "Subline of Business or Product, return either MPL or LPL.",
+                    "prompt": "Subline of Business or Product",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Submission Effective Date",
+                    "description": "Submission Effective Date",
+                    "prompt": "Submission Effective Date",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Submission Expiration Date",
+                    "description": "Submission Expiration Date",
+                    "prompt": "Submission Expiration Date",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Insurance Type",
+                    "description": "Identify the type of insurance coverage (either Insurance, Reinsurance or Retrocession)",
+                    "prompt": "Insurance Type",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Underwriter Email",
+                    "description": "Extract the email address of the underwriter assigned to this submission, it will be from MunichRe.",
+                    "prompt": "Underwriter Email",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Submission Received Date",
+                    "description": "Extract the date and time (in the format MM/DD/YYYY hh:mm AM/PM) when the underwriter forwarded this email to the shared inbox.\nLook for the earliest sent date and earliest time.",
+                    "prompt": "Submission Received Date",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Timezone",
+                    "description": "Extract the timezone of the submission received date like EST, PST, UTC, etc. Return only the timezone.",
+                    "prompt": "Timezone",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                },
+                {
+                    "name": "Additional Insured",
+                    "description": "Name of the named additional insured",
+                    "prompt": "Additional Insured",
+                    "prompt_type": "basic",
+                    "data_type": "TEXT",
+                    "model_type": "DEFAULT",
+                    "prompt_schema": null,
+                    "lines": []
+                }
+            ]
+        },
+        "96": {
+            "name": "Application Form",
+            "description": "",
+            "fields": {}
+        }
+    },
+    "classes_are_edited": false,
+    "new_classes": []
+}
