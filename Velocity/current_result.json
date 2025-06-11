@@ -1,0 +1,460 @@
+{
+    "records":[
+       {
+          "output_file_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/input/Arcelay.pdf",
+          "results":[
+             
+          ],
+          "record_index":0,
+          "classification_label":"Collateral Inventory",
+          "page_range":{
+             "start_page":1,
+             "end_page":1
+          },
+          "file_name":"Arcelay.pdf.Collateral Inventory-1-1.pdf",
+          "document_path":"/velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s3_apply_classifier/labeled_outputs/Collateral Inventory/Arcelay.pdf.Collateral Inventory-1-1.pdf",
+          "is_manually_reviewed":false,
+          "class_score":0.9999982714653015,
+          "is_human_corrected":false,
+          "absolute_ibocr_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s1_process_files/Arcelay.pdf.ibmsg"
+       },
+       {
+          "output_file_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/input/Arcelay.pdf",
+          "results":[
+             {
+                "key":"Loan_Number",
+                "value":"6723191796",
+                "field_type":"TEXT",
+                "model_confidence":0.9856989413441439
+             },
+             {
+                "key":"Document_Date",
+                "value":"ERROR",
+                "field_type":"TEXT",
+                "model_confidence":"None"
+             },
+             {
+                "key":"Loan_Amount",
+                "value":"$230,993.00",
+                "field_type":"TEXT",
+                "model_confidence":0.9999545100305702
+             },
+             {
+                "key":"Borrower",
+                "value":"[\"ARCELAYS FUNERAL SERVICES LLC\"]",
+                "field_type":"TEXT",
+                "model_confidence":0.9999520068689121
+             },
+             {
+                "key":"Maturity_Date",
+                "value":"07/01/2054",
+                "field_type":"TEXT",
+                "model_confidence":0.9998597592469345
+             },
+             {
+                "key":"Principal_and_Interest",
+                "value":"$2,374.25",
+                "field_type":"TEXT",
+                "model_confidence":0.9998178100016676
+             },
+             {
+                "key":"First_Payment_Date",
+                "value":"August 1,2024",
+                "field_type":"TEXT",
+                "model_confidence":0.9997386983078136
+             },
+             {
+                "key":"Interest_Rate",
+                "value":"11.99%",
+                "field_type":"TEXT",
+                "model_confidence":0.9999139834506353
+             },
+             {
+                "key":"Prepayment_Penalty",
+                "value":"[[\"the month shall be deemed to have been received Period\",\"on the last calendar day of the Percentage\"],[\"June 21, 2024 - July 1, 2025\",\"5%\"],[\"August 1, 2025 - July 1, 2026\",\"4%\"],[\"August 1, 2026 - July 1, 2027\",\"3%\"]]",
+                "field_type":"TEXT",
+                "model_confidence":0.9452516620239425
+             },
+             {
+                "key":"Executed_as_of_Date",
+                "value":"June 21,2024",
+                "field_type":"TEXT",
+                "model_confidence":0.731058317009605
+             },
+             {
+                "key":"Signatures",
+                "value":"[{\"Signature Date\":null,\"Signer Description\":null,\"Signed\":\"Yes\",\"Signature Name\":null},{\"Signer Description\":\"manager and sole member\",\"Signature Name\":\"Andres Arcelay\",\"Signature Date\":\"6/21/2024\",\"Signed\":\"Yes\"}]",
+                "field_type":"TEXT",
+                "model_confidence":0.95
+             }
+          ],
+          "record_index":1,
+          "classification_label":"Term Note",
+          "page_range":{
+             "start_page":2,
+             "end_page":6
+          },
+          "file_name":"Arcelay.pdf.Term Note-2-6.pdf",
+          "document_path":"/velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s3_apply_classifier/labeled_outputs/Term Note/Arcelay.pdf.Term Note-2-6.pdf",
+          "is_manually_reviewed":false,
+          "class_score":0.9863418340682983,
+          "is_human_corrected":false,
+          "absolute_ibocr_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s1_process_files/Arcelay.pdf.ibmsg"
+       },
+       {
+          "output_file_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/input/Arcelay.pdf",
+          "results":[
+             {
+                "key":"Loan_Number",
+                "value":"2024062124",
+                "field_type":"TEXT",
+                "model_confidence":0.9996645904367402
+             },
+             {
+                "key":"Document_Date",
+                "value":"June 21, 2024",
+                "field_type":"TEXT",
+                "model_confidence":0.8807964431381977
+             },
+             {
+                "key":"Loan_Amount",
+                "value":"",
+                "field_type":"TEXT",
+                "model_confidence":0.0
+             },
+             {
+                "key":"Borrower",
+                "value":"[\"ARCELAYS FUNERAL SERVICES LLC\"]",
+                "field_type":"TEXT",
+                "model_confidence":0.9999655955277769
+             },
+             {
+                "key":"Maturity_Date",
+                "value":"ERROR",
+                "field_type":"TEXT",
+                "model_confidence":"None"
+             },
+             {
+                "key":"Principal_and_Interest",
+                "value":"",
+                "field_type":"TEXT",
+                "model_confidence":0.0
+             },
+             {
+                "key":"First_Payment_Date",
+                "value":"",
+                "field_type":"TEXT",
+                "model_confidence":0.0
+             },
+             {
+                "key":"Interest_Rate",
+                "value":"",
+                "field_type":"TEXT",
+                "model_confidence":0.0
+             },
+             {
+                "key":"Prepayment_Penalty",
+                "value":"[]",
+                "field_type":"TEXT",
+                "model_confidence":"None"
+             },
+             {
+                "key":"Executed_as_of_Date",
+                "value":"7/1/24",
+                "field_type":"TEXT",
+                "model_confidence":0.9999930118027327
+             },
+             {
+                "key":"Signatures",
+                "value":"[{\"Signature Name\":\"JQuante\",\"Signed\":\"Yes\",\"Signer Description\":\"Post-Closing Supervisor\",\"Signature Date\":\"7/1/24\"}]",
+                "field_type":"TEXT",
+                "model_confidence":0.85
+             }
+          ],
+          "record_index":2,
+          "classification_label":"Term Note",
+          "page_range":{
+             "start_page":7,
+             "end_page":7
+          },
+          "file_name":"Arcelay.pdf.Term Note-7-7.pdf",
+          "document_path":"/velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s3_apply_classifier/labeled_outputs/Term Note/Arcelay.pdf.Term Note-7-7.pdf",
+          "is_manually_reviewed":false,
+          "class_score":0.9999987483024597,
+          "is_human_corrected":false,
+          "absolute_ibocr_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s1_process_files/Arcelay.pdf.ibmsg"
+       },
+       {
+          "output_file_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/input/Arcelay.pdf",
+          "results":[
+             {
+                "key":"Certified_true_copy_of_original_stamp",
+                "value":"The document does not explicitly mention a stamp indicating that it is a certified true copy of the original. However, it does include a notary acknowledgment section, which typically serves to verify the authenticity of the signatures and the document itself. If you need confirmation of its status as a certified true copy, you may need to refer to the notary's certification or contact the relevant parties involved.",
+                "field_type":"TEXT",
+                "model_confidence":0.8871959853465894
+             },
+             {
+                "key":"Borrower",
+                "value":"[\"ARCELAYS FUNERAL SERVICES LLC\",\"ARCELAYS FUNERAL SERVICES LLC\"]",
+                "field_type":"TEXT",
+                "model_confidence":0.9997646636075148
+             },
+             {
+                "key":"Real_property_address",
+                "value":"[\"2719 Northwest 6th Street, Fort Lauderdale, FL 33311-8613\",\"2719 N.W.6th Street, Fort Lauderdale, FL 33311\"]",
+                "field_type":"TEXT",
+                "model_confidence":0.9947797899743183
+             },
+             {
+                "key":"Mortgage_amount",
+                "value":"$230,993.00",
+                "field_type":"TEXT",
+                "model_confidence":0.9999951574562983
+             },
+             {
+                "key":"Executed_as_of_date",
+                "value":"June 21, 2024",
+                "field_type":"TEXT",
+                "model_confidence":0.7310583823713148
+             },
+             {
+                "key":"Signatures",
+                "value":"[{\"Signature Date\":\"6/21/2024\",\"Signer Description\":\"manager and sole member\",\"Signature Name\":\"Andres Arcelax\",\"Signed\":\"Yes\"},{\"Signature Date\":\"6/21/2024\",\"Signed\":\"Yes\",\"Signature Name\":\"Marilyn Mamport\",\"Signer Description\":\"Witness\"},{\"Signature Date\":\"6/21/2024\",\"Signature Name\":null,\"Signer Description\":\"Witness\",\"Signed\":\"Yes\"},{\"Signer Description\":\"Notary Public\",\"Signature Date\":null,\"Signature Name\":\"Christina legana\",\"Signed\":\"Yes\"},{\"Signature Name\":\"Khristina Segarra\",\"Signer Description\":null,\"Signed\":\"No\",\"Signature Date\":null},{\"Signer Description\":\"Notary Public\",\"Signature Name\":\"Christina legana\",\"Signed\":\"Yes\",\"Signature Date\":\"July 12, 2026\"},{\"Signed\":\"Yes\",\"Signature Name\":\"KHRISTINA SEGARRA\",\"Signature Date\":\"July 12, 2026\",\"Signer Description\":\"Notary Public-State of Florida\"}]",
+                "field_type":"TEXT",
+                "model_confidence":0.9
+             },
+             {
+                "key":"Notary_Acknowledgement",
+                "value":"[{\"Signed\":\"Yes\",\"Printed Name\":\"Khristina Segarra\",\"Date\":\"6/21/2024\",\"County\":\"miami Dade\",\"Identification type\":\"driver\\'s license\",\"Signature Name\":\"Christina legana\",\"Commission expires date\":null},{\"Printed Name\":\"Khristina Segarra\",\"Identification type\":\"driver\\'s license\",\"Commission expires date\":\"July 12, 2026\",\"Signed\":\"Yes\",\"County\":\"Broward County\",\"Date\":\"July 12, 2026\",\"Signature Name\":\"Christina legana\"}]",
+                "field_type":"TEXT",
+                "model_confidence":0.9
+             },
+             {
+                "key":"Notary_Stamp",
+                "value":"no",
+                "field_type":"TEXT",
+                "model_confidence":0.9998151916613469
+             }
+          ],
+          "record_index":3,
+          "classification_label":"Commercial Mortgage",
+          "page_range":{
+             "start_page":8,
+             "end_page":25
+          },
+          "file_name":"Arcelay.pdf.Commercial Mortgage-8-25.pdf",
+          "document_path":"/velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s3_apply_classifier/labeled_outputs/Commercial Mortgage/Arcelay.pdf.Commercial Mortgage-8-25.pdf",
+          "is_manually_reviewed":false,
+          "class_score":0.9982949495315552,
+          "is_human_corrected":false,
+          "absolute_ibocr_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s1_process_files/Arcelay.pdf.ibmsg"
+       },
+       {
+          "output_file_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/input/Arcelay.pdf",
+          "results":[
+             {
+                "key":"Certified_true_copy_of_original_stamp",
+                "value":"The provided text does not mention a stamp indicating that this is a certified true copy of the original. It includes details about the assignment of a commercial mortgage and an acknowledgment section for a notary public, but there is no reference to a certification stamp.",
+                "field_type":"TEXT",
+                "model_confidence":0.9999560000100717
+             },
+             {
+                "key":"Borrower",
+                "value":"[\"ARCELAYS FUNERAL SERVICES LLC\"]",
+                "field_type":"TEXT",
+                "model_confidence":0.9999609467545135
+             },
+             {
+                "key":"Real_property_address",
+                "value":"[\"13700 Northwest 19th Avenue Unit 8, Opa-locka, FL 33054\",\"30699 Russell Ranch Road, Suite 295, Westlake Village, California 91362\"]",
+                "field_type":"TEXT",
+                "model_confidence":0.9975250323954727
+             },
+             {
+                "key":"Mortgage_amount",
+                "value":"$230,993.00",
+                "field_type":"TEXT",
+                "model_confidence":0.9933068896210223
+             },
+             {
+                "key":"Executed_as_of_date",
+                "value":"June 21, 2024",
+                "field_type":"TEXT",
+                "model_confidence":0.851952557223148
+             },
+             {
+                "key":"Signatures",
+                "value":"[{\"Signature Name\":\"Jessica Duarte\",\"Signed\":\"Yes\",\"Signer Description\":\"Post-Closing Supervisor\",\"Signature Date\":\"7/1/24\"}]",
+                "field_type":"TEXT",
+                "model_confidence":0.85
+             },
+             {
+                "key":"Notary_Acknowledgement",
+                "value":"[{\"Date\":null,\"County\":null,\"Commission expires date\":null,\"Signature Name\":\"Duarte\",\"Identification type\":null,\"Signed\":\"Yes\",\"Printed Name\":\"Jessica Duarte\"}]",
+                "field_type":"TEXT",
+                "model_confidence":0.9666666666666667
+             },
+             {
+                "key":"Notary_Stamp",
+                "value":"no",
+                "field_type":"TEXT",
+                "model_confidence":0.9999198239439732
+             }
+          ],
+          "record_index":4,
+          "classification_label":"Commercial Mortgage",
+          "page_range":{
+             "start_page":26,
+             "end_page":27
+          },
+          "file_name":"Arcelay.pdf.Commercial Mortgage-26-27.pdf",
+          "document_path":"/velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s3_apply_classifier/labeled_outputs/Commercial Mortgage/Arcelay.pdf.Commercial Mortgage-26-27.pdf",
+          "is_manually_reviewed":false,
+          "class_score":0.9953578114509583,
+          "is_human_corrected":false,
+          "absolute_ibocr_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s1_process_files/Arcelay.pdf.ibmsg"
+       },
+       {
+          "output_file_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/input/Arcelay.pdf",
+          "results":[
+             
+          ],
+          "record_index":5,
+          "classification_label":"Preliminary Report",
+          "page_range":{
+             "start_page":28,
+             "end_page":28
+          },
+          "file_name":"Arcelay.pdf.Preliminary Report-28-28.pdf",
+          "document_path":"/velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s3_apply_classifier/labeled_outputs/Preliminary Report/Arcelay.pdf.Preliminary Report-28-28.pdf",
+          "is_manually_reviewed":false,
+          "class_score":0.9989944696426392,
+          "is_human_corrected":false,
+          "absolute_ibocr_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s1_process_files/Arcelay.pdf.ibmsg"
+       },
+       {
+          "output_file_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/input/Arcelay.pdf",
+          "results":[
+             
+          ],
+          "record_index":6,
+          "classification_label":"Other",
+          "page_range":{
+             "start_page":29,
+             "end_page":29
+          },
+          "file_name":"Arcelay.pdf.Other-29-29.pdf",
+          "document_path":"/velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s3_apply_classifier/labeled_outputs/Other/Arcelay.pdf.Other-29-29.pdf",
+          "is_manually_reviewed":false,
+          "class_score":0.9207334518432617,
+          "is_human_corrected":false,
+          "absolute_ibocr_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s1_process_files/Arcelay.pdf.ibmsg"
+       },
+       {
+          "output_file_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/input/Arcelay.pdf",
+          "results":[
+             {
+                "key":"Date",
+                "value":"06/21/2024",
+                "field_type":"TEXT",
+                "model_confidence":0.9914223119214916
+             },
+             {
+                "key":"Lender",
+                "value":"Velocity Commercial Capital, LLC",
+                "field_type":"TEXT",
+                "model_confidence":0.999989435724597
+             },
+             {
+                "key":"Indemnitors",
+                "value":"[{\"Indemnitors\":\"ARCELAYS FUNERAL SERVICES LLC\",\"Address\":\"13700 Northwest 19th Avenue Unit 8, Opa-locka, FL 33054\"},{\"Indemnitors\":\"Andres Arcelay\",\"Address\":\"6215 Northwest 1st Place, Miami, Florida 33150\"},{\"Address\":\"a Florida limited liability company\",\"Indemnitors\":\"ARCELAYS FUNERAL SERVICES LLC\"}]",
+                "field_type":"TEXT",
+                "model_confidence":0.85
+             },
+             {
+                "key":"Executed_as_of_date",
+                "value":"June 21,2024",
+                "field_type":"TEXT",
+                "model_confidence":0.9999484309392331
+             },
+             {
+                "key":"Signatures",
+                "value":"[{\"Signer Description\":\"manager and sole member\",\"Signature Name\":\"Andres Arcelay\",\"Signed\":\"Yes\",\"Signature Date\":\"6/21/2024\"},{\"Signature Date\":\"6/21/2024\",\"Signature Name\":\"Andres Arcelay\",\"Signed\":\"Yes\",\"Signer Description\":\"Individually\"}]",
+                "field_type":"TEXT",
+                "model_confidence":0.95
+             }
+          ],
+          "record_index":7,
+          "classification_label":"Certificate As To Oil And Hazardous Materials",
+          "page_range":{
+             "start_page":30,
+             "end_page":31
+          },
+          "file_name":"Arcelay.pdf.Certificate As To Oil And Hazardous Materials-30-31.pdf",
+          "document_path":"/velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s3_apply_classifier/labeled_outputs/Certificate As To Oil And Hazardous Materials/Arcelay.pdf.Certificate As To Oil And Hazardous Materials-30-31.pdf",
+          "is_manually_reviewed":false,
+          "class_score":0.999984085559845,
+          "is_human_corrected":false,
+          "absolute_ibocr_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s1_process_files/Arcelay.pdf.ibmsg"
+       },
+       {
+          "output_file_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/input/Arcelay.pdf",
+          "results":[
+             {
+                "key":"Loan_Number",
+                "value":"6723191796",
+                "field_type":"TEXT",
+                "model_confidence":0.9963279449676194
+             },
+             {
+                "key":"Date",
+                "value":"June 21,2024",
+                "field_type":"TEXT",
+                "model_confidence":0.9399124149788312
+             },
+             {
+                "key":"Borrower",
+                "value":"[\"ARCELAYS FUNERAL SERVICES LLC\",\"ARCELAYS FUNERAL SERVICES LLC\"]",
+                "field_type":"TEXT",
+                "model_confidence":0.9999680987198134
+             },
+             {
+                "key":"Loan_Amount",
+                "value":"$230,993.00",
+                "field_type":"TEXT",
+                "model_confidence":0.9999853008530719
+             },
+             {
+                "key":"Executed_as_of_date",
+                "value":"June 21, 2024",
+                "field_type":"TEXT",
+                "model_confidence":0.9995120083760055
+             },
+             {
+                "key":"Signatures",
+                "value":"[{\"Signer Description\":\"Lender\",\"Signature Name\":\"velocity\",\"Signature Date\":\"June 21, 2024\",\"Signed\":\"Yes\"},{\"Signature Date\":\"June 21, 2024\",\"Signer Description\":\"Borrower\",\"Signature Name\":\"ARCELAYS FUNERAL SERVICES LLC\",\"Signed\":\"Yes\"},{\"Signed\":\"Yes\",\"Signature Name\":\"MEDIC\",\"Signature Date\":\"6/21/2024\",\"Signer Description\":\"manager and sole member\"}]",
+                "field_type":"TEXT",
+                "model_confidence":0.95
+             },
+             {
+                "key":"Signature_Stamp",
+                "value":"Yes",
+                "field_type":"TEXT",
+                "model_confidence":0.982012627350967
+             }
+          ],
+          "record_index":8,
+          "classification_label":"Loan Agreement",
+          "page_range":{
+             "start_page":32,
+             "end_page":40
+          },
+          "file_name":"Arcelay.pdf.Loan Agreement-32-40.pdf",
+          "document_path":"/velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s3_apply_classifier/labeled_outputs/Loan Agreement/Arcelay.pdf.Loan Agreement-32-40.pdf",
+          "is_manually_reviewed":false,
+          "class_score":0.6507154107093811,
+          "is_human_corrected":false,
+          "absolute_ibocr_path":"velocitymortgage/Velocity-IB/fs/Instabase Drive/advanced_app/flows/output/s1_process_files/Arcelay.pdf.ibmsg"
+       }
+    ]
+ }
