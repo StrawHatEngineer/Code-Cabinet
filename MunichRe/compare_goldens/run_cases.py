@@ -11,7 +11,7 @@ host = os.getenv("IB_BASE_URL")
 token = os.getenv("IB_TOKEN")
 workspace = os.getenv("IB_WORKSPACE")
 org = os.getenv("IB_ORG")
-job_ids = ["d82516df-dcf8-4812-9383-710f726016c2", "0117eb80-d9cb-4eee-ab76-6b00954c40ad"]
+job_ids = []
 
 def create_batch():
     response = requests.post(
@@ -65,7 +65,7 @@ def run_deployment(batch_id, deployment_id):
     return response.json()
 
 def run_cases():
-    cases_dir = "./compare_goldens/cases"
+    cases_dir = "./cases"
     deployment_id = "019759b4-ff64-7cec-b41b-55597c5a8c22"
 
     # Iterate through each case folder
@@ -148,37 +148,33 @@ def fetch_results(job_id):
     print(f'AIHub results: {results}')
     return results
 
-def create_expected_results():    
-    rows = []
-    for job_id in job_ids:
-        with open(f"{job_id}.json", "r") as f:
-            results = json.load(f)
-            for file in results['files']:
-                for document in file['documents']:
-                    row = {
-                        'filename': file['original_file_name'],
-                        'classification': document['class_name']
-                    }
-                    for field in document['fields']:
-                        row[field['field_name']] = field['value']
-                    rows.append(row)
-    df = pd.DataFrame(rows)
-    df.to_excel(f'{job_id}.xlsx', index=False)
-    return df
+def create_expected_results(results):    
+    rows = []    
+    for file in results['files']:
+        for document in file['documents']:
+            row = {
+                'filename': file['original_file_name'],
+                'classification': document['class_name']
+            }
+            for field in document['fields']:
+                row[field['field_name']] = field['value']
+            rows.append(row)
+    return rows
 
 def get_results():
+    rows = []
     for job_id in job_ids:
         is_running, is_timeout = check_status(job_id)
         if not is_running and not is_timeout:
             results = fetch_results(job_id)
-            with open(f"{job_id}.json", "w") as f:
-                json.dump(results, f)
+            rows.extend(create_expected_results(results))
         else:
             print(f"Job {job_id} is timed out")
-        
+    df = pd.DataFrame(rows)
+    df.to_csv('extracted_results.csv', index=False)
+
 if __name__ == "__main__":    
-    # run_cases()
-    # get_results()
-    create_expected_results()
+    run_cases()
+    get_results()
     
 
