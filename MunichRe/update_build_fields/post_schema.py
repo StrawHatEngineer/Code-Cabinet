@@ -16,7 +16,7 @@ headers = {
 }
 
 # Post the schema
-with open("./update_build_fields/schema.json", "r") as f:
+with open("./schema.json", "r") as f:
     schema = json.load(f)
 
 response = requests.post(url, headers=headers, json=schema)

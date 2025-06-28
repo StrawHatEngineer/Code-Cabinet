@@ -12,6 +12,7 @@ token = os.getenv("IB_TOKEN")
 workspace = os.getenv("IB_WORKSPACE")
 org = os.getenv("IB_ORG")
 job_ids = []
+case_names = {}  
 
 def create_batch():
     response = requests.post(
@@ -87,7 +88,9 @@ def run_cases():
             
             # Run deployment for this case
             run_response = run_deployment(batch_id, deployment_id)
-            job_ids.append(run_response["id"])
+            job_id = run_response["id"]
+            job_ids.append(job_id)
+            case_names[job_id] = case_folder  
             print(f"Run response for {case_folder}: {run_response}")
 
 def check_status(job_id, threshold=2000):
@@ -145,36 +148,62 @@ def fetch_results(job_id):
         if not curr_result.get('has_more', False):
             break
         file_offset += len(curr_result.get('files', []))
-    print(f'AIHub results: {results}')
     return results
 
-def create_expected_results(results):    
-    rows = []    
-    for file in results['files']:
-        for document in file['documents']:
-            row = {
-                'filename': file['original_file_name'],
+def process_document_results(results, case_name):
+    extraction_records = []
+    validation_records = []
+    
+    for file_data in results['files']:
+        file_name = file_data['original_file_name']
+        
+        for document in file_data['documents']:
+            extraction_record = {
+                'case_name': case_name,
+                'filename': file_name,
                 'classification': document['class_name']
             }
+            validation_record = {
+                'case_name': case_name, 
+                'filename': file_name,
+                'classification': document['class_name']
+            }
+
             for field in document['fields']:
-                row[field['field_name']] = field['value']
-            rows.append(row)
-    return rows
+                field_name = field['field_name']
+                extraction_record[field_name] = field['value']
+                validation_record[field_name] = field['validations']['valid']
+
+            extraction_records.append(extraction_record)
+            validation_records.append(validation_record)
+            
+    return extraction_records, validation_records
 
 def get_results():
-    rows = []
+    all_extraction_records = []
+    all_validation_records = []
+    
     for job_id in job_ids:
-        is_running, is_timeout = check_status(job_id)
-        if not is_running and not is_timeout:
-            results = fetch_results(job_id)
-            rows.extend(create_expected_results(results))
+        job_status, job_timeout = check_status(job_id)
+        
+        if not job_status and not job_timeout:
+            job_results = fetch_results(job_id)
+            current_case = case_names[job_id]
+            
+            print(f"Processing case: {current_case}")
+            extraction_records, validation_records = process_document_results(job_results, current_case)
+            all_extraction_records.extend(extraction_records)
+            all_validation_records.extend(validation_records)
         else:
-            print(f"Job {job_id} is timed out")
-    df = pd.DataFrame(rows)
-    df.to_csv('extracted_results.csv', index=False)
+            print(f"Job {job_id} timed out during processing")
+
+    # Create and save dataframes
+    extraction_df = pd.DataFrame(all_extraction_records)
+    validation_df = pd.DataFrame(all_validation_records)
+    
+    extraction_df.to_csv('extracted_results.csv', index=False)
+    validation_df.to_csv('validation_results.csv', index=False)
 
 if __name__ == "__main__":    
     run_cases()
     get_results()
-    
-
