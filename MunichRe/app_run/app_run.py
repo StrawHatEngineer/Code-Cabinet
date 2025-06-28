@@ -1,9 +1,9 @@
 import requests
 
 host = "https://aihub.instabase.com"
-token = "tW5mdeAJxJh00HJoab3lV5eL79rAfs"
-workspace = "VCC-API"
-org = "velocitymortgage"
+token = "i1wdfG1ptR4zkpPo9b2g2kHqBhLoJN"
+workspace = "vinay.thapa_instabase.com"
+org = "ib-internal"
 
 def create_batch():
     response = requests.post(
@@ -14,13 +14,14 @@ def create_batch():
         },
         json={
             "name": "batch_1",
-            "workspace": workspace
+            "workspace": workspace  
         },
     )
+    print(response.json())
     return response.json()["id"]
 
 
-def upload_file(batch_id, file_path="../sample/Arcelay.pdf"):
+def upload_file(batch_id, file_path="/Volumes/lonewolf/Code-Cabinet/MunichRe/All in One 3.pdf"):
     with open(file_path, 'rb') as f:
         response = requests.put(
             f"{host}/api/v2/batches/{batch_id}/files/{file_path.split('/')[-1]}",
@@ -63,7 +64,7 @@ def run_deployment(batch_id, deployment_id):
 batch_id = create_batch()
 file_response = upload_file(batch_id)
 
-deployment_id = "01973178-d575-7b3b-b9fc-8afa9d0d6550"  
+deployment_id = "019715ad-4949-766a-864a-50ca8dff1b61"  
 run_response = run_deployment(batch_id, deployment_id)
 
 print(f"Run response: {run_response}")

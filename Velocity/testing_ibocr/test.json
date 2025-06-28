@@ -1,0 +1,1512 @@
+{
+   "records": [
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Loan_Number",
+                   "value": "6723206689",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999998063873693
+               },
+               {
+                   "key": "Date",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9975272845688868
+               },
+               {
+                   "key": "Loan_Amount",
+                   "value": "$500,000.00",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999984951481292
+               },
+               {
+                   "key": "Borrower",
+                   "value": "[\"Alipio Pozo\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999992103693379
+               },
+               {
+                   "key": "Maturity_Date",
+                   "value": "ERROR",
+                   "field_type": "TEXT",
+                   "model_confidence": null
+               },
+               {
+                   "key": "Principal_and_Interest",
+                   "value": "",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.0
+               },
+               {
+                   "key": "First_Payment_Date",
+                   "value": "ERROR",
+                   "field_type": "TEXT",
+                   "model_confidence": null
+               },
+               {
+                   "key": "Interest_Rate",
+                   "value": "10.740%",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999956342685239
+               },
+               {
+                   "key": "Prepayment_Penalty",
+                   "value": "[\"\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.0
+               },
+               {
+                   "key": "Executed_as_of_Date",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9984985298165023
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signed\":\"Yes\",\"Signer Description\":\"CLOSING ATTORNEY  AND/OR CLOSING AGENT\",\"Signature Date\":\"10-7-24\",\"Signature Name\":\"A.V. Pozo\"},{\"Signature Name\":\"Alipio Pozo\",\"Signer Description\":\"Sole Managing Member\",\"Signature Date\":\"10-7-24\",\"Signed\":\"Yes\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9
+               }
+           ],
+           "record_index": 0,
+           "classification_label": "Term Note",
+           "page_range": {
+               "start_page": 1,
+               "end_page": 5
+           },
+           "file_name": "Pozo.pdf.Lenders Instructions-1-5.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Lenders Instructions/Pozo.pdf.Lenders Instructions-1-5.pdf",
+           "is_manually_reviewed": false,
+           "is_human_corrected": true,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Lender",
+                   "value": "VELOCITY   COMMERCIAL     CAPITAL,   LLC",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.6782553992783024
+               },
+               {
+                   "key": "Loan_Number",
+                   "value": "6723206689",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999998063873693
+               },
+               {
+                   "key": "Property_Address",
+                   "value": "[\"187 Cortlandt Street, Belleville, NJ 07109\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999831180163555
+               },
+               {
+                   "key": "Hazard_Insurance_Impounds",
+                   "value": "",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.0
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signed\":\"Yes\",\"Signature Name\":\"Al Pozo\",\"Signed Date\":\"10-7-24\",\"Signer Description\":\"Sole Managing Member\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9
+               }
+           ],
+           "record_index": 1,
+           "classification_label": "Payment Instructions",
+           "page_range": {
+               "start_page": 6,
+               "end_page": 7
+           },
+           "file_name": "Pozo.pdf.Payment Instructions-6-7.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Payment Instructions/Pozo.pdf.Payment Instructions-6-7.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9449058175086975 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 1,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9449058175086975,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Date",
+                   "value": "10/7/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999962302845802
+               },
+               {
+                   "key": "Loan_Number",
+                   "value": "6723206689",
+                   "field_type": "TEXT",
+                   "model_confidence": 1.0
+               },
+               {
+                   "key": "Borrower",
+                   "value": "[\"Alipio Pozo\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999998063873693
+               },
+               {
+                   "key": "top_sig_line_signed",
+                   "value": "Yes",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.7292471690233622
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signature Name\":\"Alipio Pozo\",\"Signer Description\":\"Borrower\",\"Signature Date\":\"10/7/2024\",\"Signed\":\"Yes\"},{\"Signature Name\":\"AN. Vozo\",\"Signature Date\":null,\"Signed\":\"Yes\",\"Signer Description\":null},{\"Signature Name\":\"Alipio Pozo\",\"Signed\":\"Yes\",\"Signer Description\":\"Personally appeared\",\"Signature Date\":\"10/7/2029\"},{\"Signer Description\":\"NOTARY PUBLIC\",\"Signed\":\"Yes\",\"Signature Date\":\"3/19/2027\",\"Signature Name\":\"Alexander Del Romero\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.85
+               },
+               {
+                   "key": "Notary_Section",
+                   "value": "[{\"Personally appeared name\":\"Alipio Pozo\",\"Signature Name\":\"Signature\",\"County\":\"Essex\",\"State\":\"New Jersey\",\"Notary Name\":\"Blexander Del Romano\",\"Written Date\":\"October 7,2029\",\"State of\":\"New Jersey\",\"Signed\":\"Yes\",\"Is the borrowers name written\":\"Yes\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 1.0
+               },
+               {
+                   "key": "Is_there_a_notary_stamp",
+                   "value": "Yes",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999946806438454
+               }
+           ],
+           "record_index": 2,
+           "classification_label": "Signature Name Affidavit",
+           "page_range": {
+               "start_page": 8,
+               "end_page": 8
+           },
+           "file_name": "Pozo.pdf.Signature Name Affidavit-8-8.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Signature Name Affidavit/Pozo.pdf.Signature Name Affidavit-8-8.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9999989867210388 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 2,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9999989867210388,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Loan_Number",
+                   "value": "6723206689",
+                   "field_type": "TEXT",
+                   "model_confidence": 1.0
+               },
+               {
+                   "key": "Date",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999993295729129
+               },
+               {
+                   "key": "Borrowers",
+                   "value": "[\"555 PROSPECT STREET, L.L.C.\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9984859280279368
+               },
+               {
+                   "key": "Guarantors",
+                   "value": "[\"Alipio Pozo\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999992103693379
+               },
+               {
+                   "key": "Property_Address",
+                   "value": "[{\"Subject Property Addresses\":\"187 Cortlandt Street, Belleville, NJ 07109\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.95
+               },
+               {
+                   "key": "Date_acknowledged",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.774142074735337
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signature Name\":\"A.A.Pazo\",\"Signed\":\"Yes\",\"Signer Description\":\"Sole Managing Member\",\"Signature Date\":\"10-7-24\"},{\"Signer Description\":null,\"Signed\":\"Yes\",\"Signature Date\":null,\"Signature Name\":\"Alipio Pozo\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9416666666666668
+               }
+           ],
+           "record_index": 3,
+           "classification_label": "Waiver Of Ins And Tax",
+           "page_range": {
+               "start_page": 9,
+               "end_page": 9
+           },
+           "file_name": "Pozo.pdf.Waiver Of Ins And Tax-9-9.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Waiver Of Ins And Tax/Pozo.pdf.Waiver Of Ins And Tax-9-9.pdf",
+           "checkpoint_results": {
+               "stepIndex": 0,
+               "recordIndex": 3,
+               "valid": true,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 1.0,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Loan_Number",
+                   "value": "6723206689",
+                   "field_type": "TEXT",
+                   "model_confidence": 1.0
+               }
+           ],
+           "record_index": 4,
+           "classification_label": "Automatic Clearing House App",
+           "page_range": {
+               "start_page": 10,
+               "end_page": 13
+           },
+           "file_name": "Pozo.pdf.Automatic Clearing House App-10-13.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Automatic Clearing House App/Pozo.pdf.Automatic Clearing House App-10-13.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.996517539024353 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 4,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.996517539024353,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Loan_Amount",
+                   "value": "$500.000.00",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9990674177183257
+               },
+               {
+                   "key": "Applicants_Name",
+                   "value": "[\"Alipio Pozo\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9820137760522224
+               },
+               {
+                   "key": "Residency_Status",
+                   "value": "[\"US Citizen\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999993295729129
+               },
+               {
+                   "key": "Primary_Residence",
+                   "value": "[\"111 Florida Park Drive, Palm Coast, Florida 32137\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9988304590053244
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signer Description\":null,\"Signer Date\":null,\"Signature Name\":\"Real Estate Owned\",\"Signed\":\"Yes\"},{\"Signature Name\":\"Real Estate Owned\",\"Signer Date\":null,\"Signer Description\":null,\"Signed\":\"Yes\"},{\"Signature Name\":\"Real Estate Owned\",\"Signed\":\"Yes\",\"Signer Date\":null,\"Signer Description\":null},{\"Signer Description\":null,\"Signer Date\":\"10-7-24\",\"Signed\":\"Yes\",\"Signature Name\":\"Applicant Signature\"},{\"Signer Date\":null,\"Signature Name\":\"CoApplicant Signature\",\"Signed\":\"Yes\",\"Signer Description\":null}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9272727272727272
+               }
+           ],
+           "record_index": 5,
+           "classification_label": "Loan Application",
+           "page_range": {
+               "start_page": 14,
+               "end_page": 16
+           },
+           "file_name": "Pozo.pdf.Loan Application-14-16.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Loan Application/Pozo.pdf.Loan Application-14-16.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9997854232788086 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 5,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9997854232788086,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Property_Address",
+                   "value": "187 Cortlandt Street, Belleville, New Jersey 07109",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999945614411088
+               },
+               {
+                   "key": "Borrower",
+                   "value": "[\"Alipio Pozo\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.8353966838573731
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signature Date\":\"10-7-24\",\"Signer Description\":\"Sole Managing Member\",\"Signature Name\":\"Alipio Pozo\",\"Signed\":\"Yes\"},{\"Signer Description\":\"NOTARY PUBLIC\",\"Signed\":\"Yes\",\"Signature Name\":\"Alexander Del Romero\",\"Signature Date\":null}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9285714285714286
+               },
+               {
+                   "key": "Signed_and_sworn_to_on",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9990889517390031
+               },
+               {
+                   "key": "Notary_Signature",
+                   "value": "[{\"Signature Name\":\"Alexander Del Romero\",\"Signed\":\"Yes\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.95
+               },
+               {
+                   "key": "Notary_stamp",
+                   "value": "Yes",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9998741809682545
+               }
+           ],
+           "record_index": 6,
+           "classification_label": "Affidavit Of Title",
+           "page_range": {
+               "start_page": 17,
+               "end_page": 18
+           },
+           "file_name": "Pozo.pdf.Affidavit Of Title-17-18.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Affidavit Of Title/Pozo.pdf.Affidavit Of Title-17-18.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9999952912330627 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 6,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9999952912330627,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Name_and_Title",
+                   "value": "[{\"Name\":\"Alipio Pozo\",\"Title\":\"Sole Managing Member\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9
+               },
+               {
+                   "key": "Executed_as_of_date",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9859363206911979
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signature Description\":\"Sole Managing Member\",\"Signature Date\":\"October 7, 2024\",\"Signature Name\":\"A.H. Ya.030\",\"Signed\":\"Yes\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9
+               }
+           ],
+           "record_index": 7,
+           "classification_label": "Certificate Of Authority",
+           "page_range": {
+               "start_page": 19,
+               "end_page": 21
+           },
+           "file_name": "Pozo.pdf.Certificate Of Authority-19-21.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Certificate Of Authority/Pozo.pdf.Certificate Of Authority-19-21.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9998505711555481 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 7,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9998505711555481,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Date",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999984951481292
+               },
+               {
+                   "key": "Lender",
+                   "value": "Velocity Commercial Capital, LLC",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999937270200764
+               },
+               {
+                   "key": "Borrower",
+                   "value": "[\"555 PROSPECT STREET, L.L.C.\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9859328415437489
+               },
+               {
+                   "key": "Guarantor",
+                   "value": "[\"Alipio Pozo\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999998063873693
+               },
+               {
+                   "key": "Property_address",
+                   "value": "[\"187 Cortlandt Street Belleville, NJ 07109\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.999998137537802
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signature Name\":\"H. Pozo\",\"Signer Description\":\"Sole Managing Member\",\"Signature Date\":\"10-7-24\",\"Signed\":\"Yes\"},{\"Signer Description\":\"Individually\",\"Signed\":\"Yes\",\"Signature Name\":\"A.H. Vazo\",\"Signature Date\":\"10.7.24\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.85
+               }
+           ],
+           "record_index": 8,
+           "classification_label": "Cert As To Drug Related Act",
+           "page_range": {
+               "start_page": 22,
+               "end_page": 23
+           },
+           "file_name": "Pozo.pdf.Cert As To Drug Related Act-22-23.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Cert As To Drug Related Act/Pozo.pdf.Cert As To Drug Related Act-22-23.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9999026656150818 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 8,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9999026656150818,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Date",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9859362040766613
+               },
+               {
+                   "key": "Lender",
+                   "value": "Velocity Commercial Capital, LLC",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.999994799847051
+               },
+               {
+                   "key": "Indemnitors",
+                   "value": "[{\"Indemnitors\":\"555 PROSPECT STREET, L.L.C.\"},{\"Indemnitors\":\"Alipio Pozo\"},{\"Indemnitors\":\"555 PROSPECT STREET, L.L.C.\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.95
+               },
+               {
+                   "key": "Executed_as_of_date",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9996645904367402
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signer Description\":\"Sole Managing Member\",\"Signature Date\":\"October 7, 2024\",\"Signature Name\":\"AH.VOZO\",\"Signed\":\"Yes\"},{\"Signed\":\"Yes\",\"Signature Name\":\"ALAPozo\",\"Signer Description\":\"Individually\",\"Signature Date\":\"10-7-74\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.8
+               }
+           ],
+           "record_index": 9,
+           "classification_label": "Cert As To Oil And Haz Mat",
+           "page_range": {
+               "start_page": 24,
+               "end_page": 25
+           },
+           "file_name": "Pozo.pdf.Cert As To Oil And Haz Mat-24-25.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Cert As To Oil And Haz Mat/Pozo.pdf.Cert As To Oil And Haz Mat-24-25.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9999993443489075 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 9,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9999993443489075,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Lender",
+                   "value": "Velocity Commercial Capital, LLC",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999994487765022
+               },
+               {
+                   "key": "Guarantor",
+                   "value": "Alipio Pozo",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9998722739632716
+               },
+               {
+                   "key": "Borrower",
+                   "value": "[\"555 PROSPECT STREET, L.L.C.\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.999998137537802
+               },
+               {
+                   "key": "Date",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999998063873693
+               },
+               {
+                   "key": "Loan_Number",
+                   "value": "6723206689",
+                   "field_type": "TEXT",
+                   "model_confidence": 1.0
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signed\":\"Yes\",\"Signature Name\":\"Al\\u00edpio Pozo\",\"Signature Date\":null,\"Signer Description\":\"Sole Managing Member\"},{\"Signature Date\":\"10-7:24\",\"Signed\":\"Yes\",\"Signer Description\":\"Guarantor\",\"Signature Name\":\"Alipio Pozo\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.8
+               }
+           ],
+           "record_index": 10,
+           "classification_label": "Consent To Use Tax Return Info",
+           "page_range": {
+               "start_page": 26,
+               "end_page": 27
+           },
+           "file_name": "Pozo.pdf.Consent To Use Tax Return Info-26-27.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Consent To Use Tax Return Info/Pozo.pdf.Consent To Use Tax Return Info-26-27.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9987978935241699 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 10,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9987978935241699,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Borrower",
+                   "value": "[\"555 PROSPECT STREET, L.L.C., a New Jersey limited liability company\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9995694234965997
+               },
+               {
+                   "key": "Executed_seal_as_of_Date",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.5621765025686553
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signer Description\":\"Guarantor\",\"Signature Name\":\"Alipio Pozo\",\"Signed\":\"No\",\"Signature Date\":null},{\"Signer Description\":\"Individually\",\"Signature Date\":\"10-7-24\",\"Signed\":\"Yes\",\"Signature Name\":\"AH Pozo\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.85
+               }
+           ],
+           "record_index": 11,
+           "classification_label": "Unlimited Guaranty",
+           "page_range": {
+               "start_page": 28,
+               "end_page": 31
+           },
+           "file_name": "Pozo.pdf.Unlimited Guaranty-28-31.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Unlimited Guaranty/Pozo.pdf.Unlimited Guaranty-28-31.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9999974370002747 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 11,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9999974370002747,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Date",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.991422430108248
+               },
+               {
+                   "key": "Owner",
+                   "value": "[\"555 PROSPECT STREET, L.L.C.\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999897933314713
+               },
+               {
+                   "key": "Lender",
+                   "value": "Velocity Commercial Capital, LLC",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999477157533768
+               },
+               {
+                   "key": "Property_Addresses",
+                   "value": "[{\"Real Property Addresses\":\"187 Cortlandt Street, Belleville, NJ 07109\",\"Insurance Coverage Amount\":\"$500,000.00\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signature Name\":\"Alipio Pozo\",\"Signed\":\"Yes\",\"Signature Date\":\"10-7-24\",\"Signer Description\":\"Sole Managing Member\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.85
+               }
+           ],
+           "record_index": 12,
+           "classification_label": "Agreement To Provide Insurance",
+           "page_range": {
+               "start_page": 32,
+               "end_page": 33
+           },
+           "file_name": "Pozo.pdf.Agreement To Provide Insurance-32-33.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Agreement To Provide Insurance/Pozo.pdf.Agreement To Provide Insurance-32-33.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9947584271430969 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 12,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9947584271430969,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Loan_Number",
+                   "value": "6723206689",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9889652877508318
+               },
+               {
+                   "key": "Date",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.952573892172165
+               },
+               {
+                   "key": "Borrower",
+                   "value": "[\"555 PROSPECT STREET, L.L.C.\",\"555 PROSPECT STREET, L.L.C.\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.5621748606628468
+               },
+               {
+                   "key": "Lender",
+                   "value": "Velocity Commercial Capital, LLC",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999984951481292
+               },
+               {
+                   "key": "Loan_Amount",
+                   "value": "$500,000.00",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999966064965014
+               },
+               {
+                   "key": "Executed_as_of_date",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9940888614959488
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signer Description\":\"Sole Managing Member\",\"Signature Name\":\"A.H.Pozo\",\"Signature Date\":\"10-7-24\",\"Signed\":\"Yes\"},{\"Signed\":\"No\",\"Signature Name\":null,\"Signature Date\":null,\"Signer Description\":null}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.93
+               },
+               {
+                   "key": "Signature_Stamp",
+                   "value": "No",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999249493054897
+               }
+           ],
+           "record_index": 13,
+           "classification_label": "Loan Agreement",
+           "page_range": {
+               "start_page": 34,
+               "end_page": 42
+           },
+           "file_name": "Pozo.pdf.Loan Agreement-34-42.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Loan Agreement/Pozo.pdf.Loan Agreement-34-42.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9999681115150452 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 13,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9999681115150452,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Loan_Number",
+                   "value": "6723206689",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9213082542147031
+               },
+               {
+                   "key": "Date",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9626728829785016
+               },
+               {
+                   "key": "Loan_Amount",
+                   "value": "$500,000.00",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.999968694721959
+               },
+               {
+                   "key": "Borrower",
+                   "value": "[\"555 PROSPECT STREET, L.L.C.\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9995113081598145
+               },
+               {
+                   "key": "Maturity_Date",
+                   "value": "11/01/2054",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9933068896210223
+               },
+               {
+                   "key": "Principal_and_Interest",
+                   "value": "$4,663.65",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9982871368310032
+               },
+               {
+                   "key": "First_Payment_Date",
+                   "value": "12/01/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9933071269064124
+               },
+               {
+                   "key": "Interest_Rate",
+                   "value": "10.74%",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9998894299075529
+               },
+               {
+                   "key": "Prepayment_Penalty",
+                   "value": "[\"5%\",\"4%\",\"3%\",\"2%\",\"1%\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999937270200764
+               },
+               {
+                   "key": "Executed_as_of_Date",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999484309392331
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signature Name\":\"Alipio Pozo\",\"Signature Date\":\"10-7-24\",\"Signed\":\"Yes\",\"Signer Description\":\"Sole Managing Member\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9
+               }
+           ],
+           "record_index": 14,
+           "classification_label": "Term Note",
+           "page_range": {
+               "start_page": 43,
+               "end_page": 47
+           },
+           "file_name": "Pozo.pdf.Term Note-43-47.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Term Note/Pozo.pdf.Term Note-43-47.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9999989867210388 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 14,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9999989867210388,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Business_Name",
+                   "value": "Velocity Commercial Capital, LLC",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.7727730631399665
+               },
+               {
+                   "key": "Employer_ID_Number",
+                   "value": "20-1769968",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999993295729129
+               },
+               {
+                   "key": "Signature",
+                   "value": "[{\"Signature Name\":\"ALAPozo\",\"Signed\":\"Yes\",\"Signature Date\":\"10-7-24\"},{\"Signature Name\":\"ALAPozo\",\"Signature Date\":\"10-7-24\",\"Signed\":\"No\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9
+               }
+           ],
+           "record_index": 15,
+           "classification_label": "W 9 Entity",
+           "page_range": {
+               "start_page": 48,
+               "end_page": 52
+           },
+           "file_name": "Pozo.pdf.W 9 Entity-48-52.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/W 9 Entity/Pozo.pdf.W 9 Entity-48-52.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9941177368164062 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 15,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9941177368164062,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Name",
+                   "value": "[\"Alipio Pozo\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9967670394263605
+               },
+               {
+                   "key": "Social_Security_Number",
+                   "value": "[\"140-48-2170\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 1.0
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signature Date\":\"10-7-24\",\"Signed\":\"Yes\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9
+               }
+           ],
+           "record_index": 16,
+           "classification_label": "W 9 Individual",
+           "page_range": {
+               "start_page": 53,
+               "end_page": 53
+           },
+           "file_name": "Pozo.pdf.W 9 Individual-53-53.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/W 9 Individual/Pozo.pdf.W 9 Individual-53-53.pdf",
+           "checkpoint_results": {
+               "stepIndex": 0,
+               "recordIndex": 16,
+               "valid": true,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 1.0,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [],
+           "record_index": 17,
+           "classification_label": "Other",
+           "page_range": {
+               "start_page": 54,
+               "end_page": 57
+           },
+           "file_name": "Pozo.pdf.Other-54-57.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Other/Pozo.pdf.Other-54-57.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.0 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 17,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.0,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [],
+           "record_index": 18,
+           "classification_label": "Other",
+           "page_range": {
+               "start_page": 58,
+               "end_page": 58
+           },
+           "file_name": "Pozo.pdf.Other-58-58.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Other/Pozo.pdf.Other-58-58.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9912049770355225 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 18,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9912049770355225,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [],
+           "record_index": 19,
+           "classification_label": "Miscellaneous",
+           "page_range": {
+               "start_page": 59,
+               "end_page": 59
+           },
+           "file_name": "Pozo.pdf.Miscellaneous-59-59.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Miscellaneous/Pozo.pdf.Miscellaneous-59-59.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9964062571525574 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 19,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9964062571525574,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [],
+           "record_index": 20,
+           "classification_label": "Miscellaneous",
+           "page_range": {
+               "start_page": 60,
+               "end_page": 60
+           },
+           "file_name": "Pozo.pdf.Miscellaneous-60-60.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Miscellaneous/Pozo.pdf.Miscellaneous-60-60.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9999181628227234 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 20,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9999181628227234,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Certified_copy_of_orig_stamp",
+                   "value": "Yes, the document includes a stamp indicating that it is a \"CERTIFIED TRUE COPY.\"",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9997461539413173
+               },
+               {
+                   "key": "Borrower",
+                   "value": "[\"555 PROSPECT STREET, L.L.C.\",\"Alipio Pozo\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9978141817790618
+               },
+               {
+                   "key": "Real_property_address",
+                   "value": "[\"187 Cortlandt Street, Belleville, NJ 07109\",\"555 PROSPECT STREET, L.L.C.\",\"555 PROSPECT STREET\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9953137766746757
+               },
+               {
+                   "key": "Mortgage_amount",
+                   "value": "$500,000.00",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999918197752665
+               },
+               {
+                   "key": "Executed_as_of_date",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999866940728079
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signature Name\":\"Alipio Pozo\",\"Signer Description\":\"Sole Managing Member\",\"Signed\":\"Yes\",\"Signature Date\":\"October 7, 2024\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.95
+               },
+               {
+                   "key": "Notary_Acknowledgement",
+                   "value": "[{\"Signature Name\":\"Alipio Pozo\",\"Identification type\":null,\"Signed\":\"Yes\",\"Date\":\"October 7, 2024\",\"Commission expires date\":\"3/19/2027\",\"Printed Name\":\"Alexander Del Romano\",\"County\":\"Essex\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.95
+               },
+               {
+                   "key": "Notary_Stamp",
+                   "value": "no",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9995004696634857
+               }
+           ],
+           "record_index": 21,
+           "classification_label": "Commercial Mortgage",
+           "page_range": {
+               "start_page": 61,
+               "end_page": 76
+           },
+           "file_name": "Pozo.pdf.Commercial Mortgage-61-76.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Commercial Mortgage/Pozo.pdf.Commercial Mortgage-61-76.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9948923587799072 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 21,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9948923587799072,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [],
+           "record_index": 22,
+           "classification_label": "Settlement Statement Final HUD",
+           "page_range": {
+               "start_page": 77,
+               "end_page": 80
+           },
+           "file_name": "Pozo.pdf.Settlement Statement Final HUD-77-80.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Settlement Statement Final HUD/Pozo.pdf.Settlement Statement Final HUD-77-80.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9997751712799072 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 22,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9997751712799072,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Loan_Number",
+                   "value": "2024100724",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9525718375267134
+               },
+               {
+                   "key": "Date",
+                   "value": "12/01/2017",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9631459627376091
+               },
+               {
+                   "key": "Loan_Amount",
+                   "value": "",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.0
+               },
+               {
+                   "key": "Borrower",
+                   "value": "[\"Isabel Martinez\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9968029288327496
+               },
+               {
+                   "key": "Maturity_Date",
+                   "value": "ERROR",
+                   "field_type": "TEXT",
+                   "model_confidence": null
+               },
+               {
+                   "key": "Principal_and_Interest",
+                   "value": "",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.0
+               },
+               {
+                   "key": "First_Payment_Date",
+                   "value": "ERROR",
+                   "field_type": "TEXT",
+                   "model_confidence": null
+               },
+               {
+                   "key": "Interest_Rate",
+                   "value": "",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.0
+               },
+               {
+                   "key": "Prepayment_Penalty",
+                   "value": "[\"\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.0
+               },
+               {
+                   "key": "Executed_as_of_Date",
+                   "value": "10/08/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999975415208363
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signature Date\":\"10/8/24\",\"Signed\":\"Yes\",\"Signer Description\":\"Post-Closing\",\"Signature Name\":\"Isabel Martinez\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.85
+               }
+           ],
+           "record_index": 23,
+           "classification_label": "Term Note",
+           "page_range": {
+               "start_page": 81,
+               "end_page": 81
+           },
+           "file_name": "Pozo.pdf.Term Note-81-81.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Term Note/Pozo.pdf.Term Note-81-81.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.9999998211860657 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 23,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.9999998211860657,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [
+               {
+                   "key": "Certified_copy_of_orig_stamp",
+                   "value": "The provided text does not mention a stamp or any indication that this is a certified true copy of the original document. Therefore, based on the text, there is no stamp showing that it is a certified true copy.",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9999636585377828
+               },
+               {
+                   "key": "Borrower",
+                   "value": "[\"555 PROSPECT STREET, L.L.C.\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.999828417242512
+               },
+               {
+                   "key": "Real_property_address",
+                   "value": "[\"185-187 Cortland Street, Belleville, NJ 07109\"]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9241416678065527
+               },
+               {
+                   "key": "Mortgage_amount",
+                   "value": "Five hundred thousand and 00/100 (US $500,000.00)",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9962677143037849
+               },
+               {
+                   "key": "Executed_as_of_date",
+                   "value": "10/07/2024",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.8519527349543199
+               },
+               {
+                   "key": "Signatures",
+                   "value": "[{\"Signature Date\":\"10/8/24\",\"Signed\":\"Yes\",\"Signature Name\":\"Isabel Martinez\",\"Signer Description\":\"Post-Closing\"},{\"Signer Description\":\"Post-Closing\",\"Signature Name\":\"Isabel Martinez\",\"Signed\":\"Yes\",\"Signature Date\":\"10/8/24\"}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9
+               },
+               {
+                   "key": "Notary_Acknowledgement",
+                   "value": "[{\"Signed\":\"Yes\",\"Printed Name\":\"Isabel Martinez\",\"County\":null,\"Date\":null,\"Commission expires date\":null,\"Signature Name\":\"Isabel Martinez\",\"Identification type\":null}]",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9666666666666667
+               },
+               {
+                   "key": "Notary_Stamp",
+                   "value": "no",
+                   "field_type": "TEXT",
+                   "model_confidence": 0.9982486440718135
+               }
+           ],
+           "record_index": 24,
+           "classification_label": "Commercial Mortgage",
+           "page_range": {
+               "start_page": 82,
+               "end_page": 84
+           },
+           "file_name": "Pozo.pdf.Commercial Mortgage-82-84.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Commercial Mortgage/Pozo.pdf.Commercial Mortgage-82-84.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.5372638702392578 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 24,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.5372638702392578,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       },
+       {
+           "output_file_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/input/Pozo.pdf",
+           "results": [],
+           "record_index": 25,
+           "classification_label": "Preliminary Report",
+           "page_range": {
+               "start_page": 85,
+               "end_page": 95
+           },
+           "file_name": "Pozo.pdf.Preliminary Report-85-95.pdf",
+           "document_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s3_apply_classifier/labeled_outputs/Preliminary Report/Pozo.pdf.Preliminary Report-85-95.pdf",
+           "checkpoint_results": {
+               "results": [
+                   {
+                       "valid": false,
+                       "msg": "Actual confidence 0.8747236728668213 was below the configured threshold 1",
+                       "type": "classification-custom"
+                   }
+               ],
+               "stepIndex": 0,
+               "recordIndex": 25,
+               "valid": false,
+               "flowPathInBinary": "codelabs.ibflow",
+               "stepId": "s4"
+           },
+           "is_manually_reviewed": false,
+           "class_score": 0.8747236728668213,
+           "is_human_corrected": false,
+           "absolute_ibocr_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/s1_process_files/Pozo.pdf.ibmsg"
+       }
+   ],
+   "binary_path": "velocitymortgage-1/VCC-API/fs/Azure Blob Storage/app-runs/eae09257-3f49-426c-b985-cfa352981414/1750346689230/output/bin/app-deployment.ibflowbin",
+   "job_id": "d51bfd7e-4c42-4f42-a5fd-0e6f7d222a5b",
+   "can_resume": false,
+   "customer_identifier": "6723206689",
+   "project_identifier": "Post Closing Application"
+}

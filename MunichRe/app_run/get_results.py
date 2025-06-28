@@ -1,12 +1,12 @@
 import requests
 import json
 
-host = "https://aihub.instabase.com"
-token = "F1pNww9SDzF1DeO47CjUZXzzIV5fTx"
+host = "https://munichre-gsi.aihub.instabase.com"
+token = "cTKpFDOWfiMOieGJrYLNVSAXpAOv"
 
-run_id = "a1a4fc4b-4a92-4344-bd72-26d8b6413f16"
-workspace = "vinay.thapa_instabase.com"
-org = "ib-internal"
+run_id = "eddb0bef-19d0-44c3-b79f-122949540e74"
+workspace = ""
+org = "munichre"
 
 
 def get_results(run_id):

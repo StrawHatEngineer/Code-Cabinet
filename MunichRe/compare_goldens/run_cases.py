@@ -1,16 +1,15 @@
+from typing import Any
+from instabase.provenance.registration import register_fn
 import os
 import requests
-import dotenv
 import time
 import json
-import pandas as pd
+import pandas as pd   
 
-dotenv.load_dotenv()    
-
-host = os.getenv("IB_BASE_URL")
-token = os.getenv("IB_TOKEN")
-workspace = os.getenv("IB_WORKSPACE")
-org = os.getenv("IB_ORG")
+host = "https://munichre-gsi.aihub.instabase.com"
+token = "4S6sYTbnpx5WwM6RNQBM5rSWI8JTZR"
+workspace = "vthapa_munichre.com"
+org = "munichre"
 job_ids = []
 case_names = {}  
 
@@ -25,19 +24,29 @@ def create_batch():
             "name": "batch_1",
             "workspace": workspace
         },
+        verify=False
     )
+    print(response.text)
     return response.json()["id"]
 
-def upload_file(batch_id, file_path):
-    with open(file_path, 'rb') as f:
-        response = requests.put(
-            f"{host}/api/v2/batches/{batch_id}/files/{file_path.split('/')[-1]}",
-            headers={
-                "Authorization": f"Bearer {token}",
-                "Ib-Context": org
-            },
-            data=f.read()
-        )
+def upload_file(batch_id, file_path, ib_clients):
+    # Read file using ibfile
+    file_content, err = ib_clients.ibfile.read_file(file_path)
+    if err:
+        print(f"Error reading file {file_path}: {err}")
+        return None
+    
+    # Upload to batch
+    response = requests.put(
+        f"{host}/api/v2/batches/{batch_id}/files/{os.path.basename(file_path)}",
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Ib-Context": org
+        },
+        data=file_content,
+        verify=False
+    )
+    print(response.text)
     return response
 
 def run_deployment(batch_id, deployment_id):
@@ -65,29 +74,42 @@ def run_deployment(batch_id, deployment_id):
     )
     return response.json()
 
-def run_cases():
-    cases_dir = "./cases"
-    deployment_id = "019759b4-ff64-7cec-b41b-55597c5a8c22"
+def run_cases(**kwargs):
+    fn_context = kwargs.get('_FN_CONTEXT_KEY')
+    clients, _ = fn_context.get_by_col_name('CLIENTS')
+    cases_dir = "munichre/vthapa_munichre.com/fs/Instabase Drive/files/"
+    deployment_id = "0197785d-8d10-72fa-9499-4019edf1e5ba"
+    
+    # Initialize Instabase clients
+    ib_clients = clients
 
     # Iterate through each case folder
-    for case_folder in os.listdir(cases_dir):
-        case_path = os.path.join(cases_dir, case_folder)
+    case_dir, _ = ib_clients.ibfile.list_dir(cases_dir, 0)
+    print(case_dir.nodes)
+    for case_node in case_dir.nodes:
+        case_path = os.path.join(cases_dir, case_node.name)
+        print(case_path)
         
-        if os.path.isdir(case_path):
+        if ib_clients.ibfile.is_dir(case_path):
+            case_folder = os.path.basename(case_path)
             print(f"\nProcessing case: {case_folder}")
             
             # Create new batch for each case
             batch_id = create_batch()
             
             # Upload all files in the case folder
-            for file_name in os.listdir(case_path):
-                file_path = os.path.join(case_path, file_name)
-                if os.path.isfile(file_path):
+            file_dir, _ = ib_clients.ibfile.list_dir(case_path, 0)
+            print(file_dir)
+            for file_node in file_dir.nodes:
+                file_path = os.path.join(case_path, file_node.name)
+                if not ib_clients.ibfile.is_dir(file_path):
+                    file_name = os.path.basename(file_path)
                     print(f"Uploading file: {file_name}")
-                    file_response = upload_file(batch_id, file_path)
+                    file_response = upload_file(batch_id, file_path, ib_clients)
             
             # Run deployment for this case
             run_response = run_deployment(batch_id, deployment_id)
+            print(run_response)
             job_id = run_response["id"]
             job_ids.append(job_id)
             case_names[job_id] = case_folder  
@@ -153,10 +175,10 @@ def fetch_results(job_id):
 def process_document_results(results, case_name):
     extraction_records = []
     validation_records = []
-    
+
     for file_data in results['files']:
         file_name = file_data['original_file_name']
-        
+
         for document in file_data['documents']:
             extraction_record = {
                 'case_name': case_name,
@@ -172,14 +194,23 @@ def process_document_results(results, case_name):
             for field in document['fields']:
                 field_name = field['field_name']
                 extraction_record[field_name] = field['value']
-                validation_record[field_name] = field['validations']['valid']
+                validations = field.get('validations',{})
+                if validations:
+                     validation_record[field_name] = validations.get('valid', False)
+                else:
+                    validation_record[field_name] =  False
 
             extraction_records.append(extraction_record)
             validation_records.append(validation_record)
-            
+
     return extraction_records, validation_records
 
-def get_results():
+def get_results(**kwargs):
+
+    fn_context = kwargs.get('_FN_CONTEXT_KEY')
+    clients, _ = fn_context.get_by_col_name('CLIENTS')
+    ib_clients = clients
+
     all_extraction_records = []
     all_validation_records = []
     
@@ -201,9 +232,19 @@ def get_results():
     extraction_df = pd.DataFrame(all_extraction_records)
     validation_df = pd.DataFrame(all_validation_records)
     
-    extraction_df.to_csv('extracted_results.csv', index=False)
-    validation_df.to_csv('validation_results.csv', index=False)
+    # Write results using ibfile
+    extraction_csv = extraction_df.to_csv(index=False)
+    validation_csv = validation_df.to_csv(index=False)
+    
+    _, err = ib_clients.ibfile.write_file('extracted_results.csv', extraction_csv)
+    if err:
+        print(f"Error writing extracted_results.csv: {err}")
+    
+    _, err = ib_clients.ibfile.write_file('validation_results.csv', validation_csv)
+    if err:
+        print(f"Error writing validation_results.csv: {err}")
 
-if __name__ == "__main__":    
-    run_cases()
-    get_results()
+@register_fn(provenance=False)
+def start_run(**kwargs):    
+    run_cases(**kwargs)
+    get_results(**kwargs)
